@@ -13,7 +13,8 @@
     />
 
     <title>Pricing component</title>
-
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat" />
+    <link rel="stylesheet" href="./style.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -26,10 +27,93 @@
     </style>
   </head>
   <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
+    <div class="container">
+
+      <h1>Our Pricing</h1>
+
+      <div class="toggle-container">
+        <p class="toggle-p">Annually</p>
+        <button>Toggle</button>
+        <p class="toggle-p">Monthly</p>
+      </div>
+
+      <main class="main-container">
+        <section class="plans-section">
+          <h3>Basic</h3>
+          <div class="price"><span class="dollar">$</span><h2>19.99</h2></div>
+          <hr />
+          <p>500 GB Storage</p>
+          <hr />
+          <p>2 Users Allowed</p>
+          <hr />
+          <p>Send up to 3GB</p>
+          <hr class="last-hr"/>
+          <button>LEARN MORE</button>
+        </section>
+        <section class="plans-section">
+          <h3>Professional</h3>
+          <div class="price"><span class="dollar">$</span><h2>24.99</h2></div>
+          <hr />
+          <p>1 TB Storage</p>
+          <hr />
+          <p>5 Users Allowed</p>
+          <hr />
+          <p>Send up to 10GB</p>
+          <hr class="last-hr"/>
+          <button>LEARN MORE</button>
+        </section>
+        <section class="plans-section">
+          <h3>Master</h3>
+          <div class="price"><span class="dollar">$</span><h2>39.99</h2></div>
+          <hr />
+          <p>2 TB Storage</p>
+          <hr />
+          <p>10 Users Allowed</p>
+          <hr />
+          <p>Send up to 20GB</p>
+          <hr class="last-hr"/>
+          <button>LEARN MORE</button>
+        </section>
+      </main>
+
+      <!-- <main class="main-container">
+        <section class="plans-section">
+          <h3>Basic</h3>
+            <div class="price"><span class="dollar">$</span><h2>199.99</h2></div>
+          <hr />
+          <p>500 GB Storage</p>
+          <hr />
+          <p>2 Users Allowed</p>
+          <hr />
+          <p>Send up to 3GB</p>
+          <hr class="last-hr"/>
+          <button>LEARN MORE</button>
+        </section>
+        <section class="plans-section">
+          <h3>Professional</h3>
+          <div class="price"><span class="dollar">$</span><h2>249.99</h2></div>
+          <hr />
+          <p>1 TB Storage</p>
+          <hr />
+          <p>5 Users Allowed</p>
+          <hr />
+          <p>Send up to 10GB</p>
+          <hr class="last-hr"/>
+          <button>LEARN MORE</button>
+        </section>
+        <section class="plans-section">
+          <h3>Master</h3>
+          <div class="price"><span class="dollar">$</span><h2>399.99</h2></div>
+          <hr />
+          <p>2 TB Storage</p>
+          <hr />
+          <p>10 Users Allowed</p>
+          <hr />
+          <p>Send up to 20GB</p>
+          <hr class="last-hr"/>
+          <button>LEARN MORE</button>
+        </section>
+      </main> -->
+    </div>
   </body>
 </html>
