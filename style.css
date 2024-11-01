@@ -1,143 +1,164 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif ;
-    background-color: hsl(240, 78%, 98%);
-    background-image: url('./images/bg-top.svg'),url('./images/bg-bottom.svg');
-    background-repeat: no-repeat;
-    background-position: top right ,left bottom;
-    background-attachment: fixed ;
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(240, 78%, 98%);
+  background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: top right, left bottom;
+  background-attachment: fixed;
 }
 
-
 .container {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
-h1{
-    margin-top: 5vh;
-    height: 5vh;
+h1 {
+  margin-top: 5vh;
+  height: 5vh;
 }
 hr {
-    border: solid black 1px;
-    width: 20vw;
-    opacity: .2;
+  border: solid black 1px;
+  width: 20vw;
+  opacity: 0.2;
 }
-h3{
-    font-size: 1.5rem;
+h3 {
+  font-size: 1.5rem;
 }
-h2{
-    font-size: 4rem;
+h2 {
+  font-size: 4rem;
 }
-.toggle-p{
-    opacity: .5;
+.toggle-p {
+  opacity: 0.5;
 }
-.dollar{
-    font-size: 2rem;
+.dollar {
+  font-size: 2rem;
 }
-.plans-section button{
-    padding: 15px;
-    font-size: 15px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif ;
-    background-color: hsl(234, 57%, 60%);
-    color: white;
-    border :none;
-    border-radius: 5px;
-    width: 20vw;
-}
-
-.toggle-container{
-    margin-bottom: 5vh;
-    width: 25vh;
-    height: 5vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.plans-section button {
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(234, 57%, 60%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 20vw;
 }
 
-.main-container{
-    height: 70vh;
-    width: 75vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10vh;
+.toggle-container {
+  margin-bottom: 3vh;
+  width: 25vh;
+  height: 7vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-container {
+  height: 70vh;
+  width: 75vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10vh;
 }
 
 .plans-section {
-    width: 25vw;
-    height: 68vh;
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 25vw;
+  height: 68vh;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .last-hr {
-    margin-bottom: 25%;
+  margin-bottom: 25%;
 }
 
 .plans-section:hover {
+  background-color: hsl(234, 57%, 60%);
+  color: white;
+  height: 70vh;
+  width: 25vw;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+
+.plans-section:hover button {
+  color: hsl(234, 57%, 60%);
+  background-color: white;
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plans-section {
+    width: 90vw;
+    padding-bottom: 5vh;
+    margin-bottom: 10vh;
+  }
+
+  .plans-section button,
+  hr {
+    width: 70vw;
+  }
+
+  .plans-section:hover {
     background-color: hsl(234, 57%, 60%);
-    color : white;
-    height : 70vh;
-    width: 25vw;
-    padding: 20px 0;
-    border-radius: 10px;
-}
+    color: white;
+    width: 90vw;
+    padding: 0;
+    padding-bottom: 5vh;
+    margin-bottom: 10vh;
+  }
 
-.plans-section:hover button{
+  .plans-section:hover button {
     color: hsl(234, 57%, 60%);
-    background-color : white;
+    background-color: white;
+  }
 }
 
+.toggle-btn {
+  height: 30px;
+  width: 60px;
+  background-color: hsl(234, 57%, 60%);
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
 
+.toggle-btn::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  inset: 4px;
+}
 
-@media (max-width : 480px){
-    .main-container{
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .plans-section {
-        width: 90vw;
-        padding-bottom: 5vh;
-        margin-bottom: 10vh;
-    }
-
-    .plans-section button,hr{
-        width: 70vw;
-    }
-
-    .plans-section:hover {
-        background-color: hsl(234, 57%, 60%);
-        color : white;
-        width: 90vw;
-        padding: 0;
-        padding-bottom: 5vh;
-        margin-bottom: 10vh;
-    }
-    
-    .plans-section:hover button{
-        color: hsl(234, 57%, 60%);
-        background-color : white;
-    }
+.toggle-btn.active::before {
+  transform: translateX(30px);
 }
