@@ -18,26 +18,17 @@
       href="https://fonts.google.com/specimen/Montserrat"
     />
     <link rel="stylesheet" href="./style.css" />
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+
   </head>
   <body>
     <div class="container">
       <h1>Our Pricing</h1>
 
-      <div class="toggle-container">
+      <section class="toggle-container">
         <p class="toggle-p">Annually</p>
         <div class="toggle-btn" id="toggleBtn"></div>
         <p class="toggle-p">Monthly</p>
-      </div>
+      </section>
 
       <main class="main-container" id="monthlyPricing">
         <section class="plans-section">
@@ -137,9 +128,9 @@
     </div>
 
     <script>
-      const toggleBtn = document.getElementById("toggleBtn");
-      const monthlyPricing = document.getElementById("monthlyPricing");
-      const annualPricing = document.getElementById("annualPricing");
+      let toggleBtn = document.getElementById("toggleBtn");
+      let monthlyPricing = document.getElementById("monthlyPricing");
+      let annualPricing = document.getElementById("annualPricing");
 
       monthlyPricing.style.display = "none";
       annualPricing.style.display = "flex";

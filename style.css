@@ -58,12 +58,13 @@ h2 {
   border: none;
   border-radius: 5px;
   width: 20vw;
+  cursor: pointer;
 }
 
 .toggle-container {
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
   width: 25vh;
-  height: 7vh;
+  height: 5vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -80,7 +81,7 @@ h2 {
 
 .plans-section {
   width: 25vw;
-  height: 68vh;
+  height: 70vh;
   background-color: white;
   border-radius: 10px;
   display: flex;
